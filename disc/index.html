@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="css/app.css?v=1">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="page" id="page-index" style="display:block;">
+    <header class="header">
+        <h1>타이틀</h1>
+    </header>
+    <section class="number-input">
+        <input class="app-none" type="text" readonly value="2">
+        <input class="app-none" type="text" readonly value="4">
+        <input class="app-none" type="text" readonly value="6">
+        <input class="app-none" type="text" readonly value="8">
+    </section>
+    <section class="number-tips">
+        <span class="mui-icon mui-icon-compose"></span>차량번호 뒤4자리 입력하세요!
+    </section>
+    <section class="number-grid">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li class="cancel"><span class="mui-icon mui-icon-closeempty"></span>취소</li>
+            <li>0</li>
+            <li class="ok" id="go-page-search"><span class="mui-icon mui-icon-checkmarkempty"></span>확인</li>
+        </ul>
+    </section>
+</div>
+
+<div class="page" id="page-search">
+    <header class="header">
+        <a class="mui-icon mui-icon-left-nav" id="re-page-index"></a>
+        <h1>차량 검색결과</h1>
+    </header>
+    <section class="search-list" id="go-page-result">
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+        <a href="#">서울12더3456<span class="mui-icon mui-icon-arrowthinright"></span></a>
+    </section>
+    <div class="re-search-btn">
+        <input class="app-none" type="submit" value="다시 검색">
+    </div>
+</div>
+
+<div class="page" id="page-result">
+    <header class="header">
+        <a class="mui-icon mui-icon-left-nav" id="re-page-search"></a>
+        <h1>차량 상세보기</h1>
+    </header>
+    <section class="car-info">
+        <ul>
+            <li><span>차량번호</span>서울12더3456</li>
+            <li><span>입차시간</span>2018-03-07 12:00</li>
+            <li><span>주차시간</span>1시간 30분</li>
+            <li><span>할인시간</span>30분</li>
+        </ul>
+    </section>
+    <section class="free clear">
+        <div class="free-btn">
+            <input class="app-none" type="button" value="무료">
+        </div>
+        <div class="free-content">
+            <ul>
+                <li class="active"><span class="mui-icon mui-icon-checkmarkempty"></span>내용1</li>
+                <li><span class="mui-icon mui-icon-checkmarkempty"></span>내용2</li>
+                <li><span class="mui-icon mui-icon-checkmarkempty"></span>내용3</li>
+            </ul>
+        </div>
+    </section>
+    <section class="btn-group">
+        <div class="time">
+            <input class="app-none" type="button" value="10분">
+            <input class="app-none" type="button" value="30분">
+            <input class="app-none" type="button" value="1시간">
+        </div>
+        <div class="btn">
+            <input class="app-none cancel" type="button" value="취소">
+            <input class="app-none ok" type="button" value="할인">
+        </div>
+    </section>
+</div>
+
+<script>
+    $(function() {
+        $('#go-page-search').on('click', function() {
+            $('#page-index').hide();
+            $('#page-search').show();
+        });
+        $('#go-page-result a').on('click', function() {
+            $('#page-search').hide();
+            $('#page-result').show();
+        });
+        $('#re-page-search').on('click', function() {
+            $('#page-result').hide();
+            $('#page-search').show();
+        });
+        $('#re-page-index').on('click', function() {
+            $('#page-search').hide();
+            $('#page-index').show();
+        });
+    });
+</script>
+
+</body>
+</html>
