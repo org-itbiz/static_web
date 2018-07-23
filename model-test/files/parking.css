@@ -1,0 +1,311 @@
+.sub_top02 {margin-bottom:0px;}
+.board .sub_top02 {margin-bottom:100px;}
+
+
+
+
+
+
+
+#banner_slider {position:relative; padding:65px 120px;}
+#banner_slider .slider_wrap {margin:0 auto;}
+#banner_slider, #banner_slider .bx-wrapper {position:relative; background:#545b61;}
+#banner_slider .bx-wrapper {background:none;}
+#banner_slider .li_wrap {margin:0 3.8% 3%; background:#fff; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+#banner_slider .img {overflow:hidden; position:relative; padding-bottom:100%;}
+#banner_slider .img img {position:absolute; top:0px; left:0px; width:100%; -webkit-transition: all 0.4s ease; transition: all 0.4s ease;}
+#banner_slider .li_wrap span {display:block; border-top:1px solid #e0e0e0; height:70px; padding-top:10px; font-size:15px; color:#333333; text-align:center;}
+#banner_slider li:hover .li_wrap {box-shadow:3px 5px 10px rgba(0,0,0,0.4);-moz-box-shadow:3px 5px 10px rgba(0,0,0,0.4);-webkit-box-shadow:3px 5px 10px rgba(0,0,0,0.6);}
+#banner_slider li:hover .img img {transform:scale(1.1);}
+#banner_slider .bx-wrapper .bx-prev {width:67px; height:59px; left:-85px; z-index:1000; margin:0; margin-top:-30px; background:url('../images/sub/btn_prev01.png') no-repeat; background-size:100% auto;}
+#banner_slider .bx-wrapper .bx-next {width:67px; height:59px; right:-85px; z-index:1000; margin:0; margin-top:-30px; background:url('../images/sub/btn_next01.png') no-repeat; background-size:100% auto;}
+
+
+
+.parking_cont01 {margin-top:-1px; border-bottom:1px solid #dcdcdc; background:#fff;}
+
+.parking_cont02 {border-top:1px solid #dcdcdc;}
+.parking_cont02 img {max-width:100%;}
+.parking_cont02 .cont01 {padding:3.4%;}
+.parking_cont02 .cont03 {padding:3.4%; text-align:center; background:#e5f3f8;}
+.parking_cont02 .cont03 strong {display:block; padding-bottom:1.5%; font-size:22px; color:#0088bf; text-align:left;}
+
+.parking_cont03 {overflow:hidden; padding:3.5%; border-top:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc;}
+.parking_cont03 .img {float:left; width:32.26%; text-align:center; background:url('../images/sub/bg01.jpg');}
+.parking_cont03 img {max-width:100%;}
+.parking_cont03 .cont {float:right; width:63.02%;}
+.parking_cont03 .cont ul {margin:1.5% 0 4%;}
+.parking_cont03 .cont table {font-size:16px; color:#333333;}
+.parking_cont03 .cont table td {text-align:left; color:#333333;}
+.parking_cont03 .cont table td:first-child {text-align:center;}
+.parking_cont03 .col01 {width:65px;}
+
+.parking_cont04 {padding:6.25% 3.5% 0; text-align:left;}
+.parking_cont04 h3 {position:relative; padding-left:60px; font-size:30px; color:#222222; font-weight:500;}
+.parking_cont04 h3 b {position:absolute; top:0; left:0; width:40px; margin-right:15px; font-size:20px; line-height:40px; color:#fff; text-align:center; background:#333333;}
+.parking_cont04 p {padding-top:2%; padding-left:60px; color:#333333;}
+.parking_cont04.type02 {padding:30px 0 45px;}
+
+.parking_cont05 {text-align:center;}
+.parking_cont05 img {max-width:100%;}
+.parking_cont05 > p {color:#333333;}
+.parking_cont05 p strong {display:block; font-size:48px; font-weight:300;}
+.parking_cont05 p strong b {font-weight:400;}
+.parking_cont05 p em {display:block; font-size:30px;}
+.parking_cont05 ul {overflow:hidden; max-width:600px; margin:40px auto 0;}
+.parking_cont05 ul li {float:left; position:relative; width:33.3333%; margin-bottom:5%;}
+.parking_cont05 ul li+li:before {position:absolute; top:50%; left:-20%; width:50%; height:1px; background:#dddddd; content:'';}
+.parking_cont05 li > div {width:90%; max-width:175px; margin:0 auto;}
+.parking_cont05 li > div > div {position:relative; z-index:2; padding-bottom:100%; -webkit-border-radius:50%;  border-radius:50%; color:#fff; background:#0088bf;}
+.parking_cont05 li > div p {position:absolute; top:50%; left:50%; width:90%; transform: translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%);}
+.parking_cont05 li > div b {display:inline-block; padding:0 2px; border-bottom:1px solid #ffffff; font-size:22px; color:#fff; font-weight:400; line-height:1.59;}
+.parking_cont05 li > div strong {display:block; padding:4% 0; font-size:24px; line-height:1.22; font-weight:400;}
+.parking_cont05 li > div strong.type02 {font-size:20px;}
+.parking_cont05 li > span {display:block; padding:20px 5% 0; color:#333333;}
+.parking_cont05.type02 {padding-bottom:2%;}
+.parking_cont05.type02 li+li:before {display:none;}
+.parking_cont05.type02 li > div strong {font-size:21px;}
+.parking_cont05.type03 ul {width:100%; max-width:none; margin:0;}
+.parking_cont05.type03 li {width:25%; margin-bottom:0; padding:5% 2%; background:#fff;}
+.parking_cont05.type03 li > div {width:100%;}
+.parking_cont05.type03 li {border-left:1px solid #ededed; border-top:1px solid #ededed; margin-top:-1px; margin-left:-1px;}
+.parking_cont05.type03 li+li:before {display:none;}
+.parking_cont05.type03 span {min-height:120px;}
+
+
+
+
+.parking_cont05.grid4 ul {max-width:900px;}
+.parking_cont05.grid4 ul li {width:25%;}
+.parking_cont05.grid4_t ul {max-width:950px;}
+.parking_cont05.grid4_t ul li {width:25%;}
+.parking_cont05.grid4_t ul li+li:before {display:none;}
+.parking_cont05.grid5 ul {max-width:1000px;}
+.parking_cont05.grid5 ul li {width:20%;}
+
+.parking_cont06 {display:inline-block; width:100%; padding:45px; background:#3d3c3a no-repeat 60%; background-size:auto 100%;}
+.parking_cont06 p.img {float:left; width:220px;}
+.parking_cont06 p.img img+img {margin-top:9px;}
+.parking_cont06.parking02_01_img0203 {background-image:url('../images/business/parking/parking02_01_img0203.jpg');}
+.parking_cont06.parking02_02_img0303 {background-image:url('../images/business/parking/parking02_02_img0303.jpg');}
+.parking_cont06.parking02_03_img0203 {background-image:url('../images/business/parking/parking02_03_img0203.jpg');}
+.parking_cont06 div {margin-left:293px;}
+.parking_cont06 div strong {display:block; position:relative; margin:30px 0 20px; font-size:40px; color:#fff; font-weight:400; line-height:1.75;}
+.parking_cont06 div strong:before {position:absolute; top:0; left:0; width:30px; height:2px; background:#fff; content:'';}
+
+
+.parking_cont07 {}
+.parking_cont07 ul {margin:-0.5%; text-align:center;}
+.parking_cont07 li {padding:0.5%;}
+.parking_cont07 li > div {position:relative; border:1px solid #dcdcdc;}
+.parking_cont07 li img {width:100%;}
+.parking_cont07 li b {position:absolute; top:15px; left:15px; width:37px; -webkit-border-radius:50%; border-radius:50%; font-size:18px; color:#fff; line-height:37px; font-weight:400; background:rgba(0,0,0,0.8);}
+.parking_cont07 li strong {display:block; padding:5.2% 2%; border-top:1px solid #dcdcdc; font-size:20px; color:#333; font-weight:400;}
+.parking_cont07 li strong.s1 {padding:1.7% 2% 0.2% 2%;}
+.parking_cont07 li strong.s2 {padding:3.5% 2% 2.7% 2%;font-size:15px;}
+.parking_cont07 li strong  i{font-size:13px;}
+.parking_cont07.type02 strong {display:block; padding:25px 5px; color:#222; background:#f0f0f0;}
+.parking_cont07.type02 img {width:auto; max-width:100%;}
+
+
+.parking_cont08 li {padding:0 4.5%;}
+.parking_cont08 img {max-width:100%;}
+
+.parking_cont09 ul {max-width:1014px; margin:0 auto; color:#fff;}
+.parking_cont09 li {padding:0.8%;}
+.parking_cont09 img {width:100%;}
+.parking_cont09 li strong {display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; line-height:2.5; font-weight:400; background:#545b61;}
+.parking_cont09.type02 {padding:6% 4%;}
+.parking_cont09.type02 em {display:block; margin:6% auto 3%; color:#333333;}
+.parking_cont09.type02 em:first-child {margin-top:0;}
+
+.parking_cont10 ul {margin:-0.8%; text-align:center;}
+.parking_cont10 li {padding:0.8%;}
+.parking_cont10 li > div {padding:8.3%; border:1px solid #dcdcdc;}
+.parking_cont10 img {max-width:100%;}
+.parking_cont10 strong {display:block; padding-top:5%; font-weight:400; color:#000000;}
+
+.google_search {padding:75px 20px 85px; border-top:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc; text-align:center;}
+.google_search em {display:block; color:#333333;}
+.google_search img {margin-top:25px; max-width:100%;}
+
+
+.parking_cont11 {overflow:hidden; position:relative; margin-top:6.25%; border-top:1px solid #dcdcdc;}
+.parking_cont11:last-child {padding-bottom:6.25%; border-bottom:1px solid #dcdcdc;}
+.parking_cont11 .cont01, .parking_cont11 .cont02 {margin-top:6.25%;}
+.parking_cont11 .cont01 {float:left; position:relative; width:49.2%;}
+.parking_cont11 .cont02 {float:left; width:45.5%;}
+.parking_cont11.type01 .cont02 {float:right;}
+.parking_cont11.type02 .cont01 {float:right;}
+.parking_cont11 .cont01 img {width:100%;}
+.parking_cont11 .cont01 p {position:absolute; color:#ffffff;}
+.parking_cont11 .cont01 em {display:block; margin-bottom:17px; padding-bottom:20px; position:relative; font-size:46px; font-weight:400; line-height:1.17;}
+.parking_cont11 .cont01 em:after {position:absolute; bottom:0; left:0; width:40px; height:1px; background:#fff; content:'';}
+.parking_cont11 .cont01 b {font-weight:500;}
+.parking_cont11 .cont01 span {font-size:26px;}
+.parking_cont11 .pos_tl {top:8%; left:6%;}
+.parking_cont11 .pos_br {bottom:8%; right:6%; text-align:right;}
+.parking_cont11 .pos_br em:after {left:auto; right:0;}
+.parking_cont11 .pos_tr {top:8%; right:6%; text-align:right;}
+.parking_cont11 .pos_tr em:after {left:auto; right:0;}
+.parking_cont11 .cont02 .top {position:relative; margin-bottom:35px; padding-left:100px; line-height:1.2;}
+.parking_cont11 .cont02 .top.type02 {padding-left:0;}
+.parking_cont11 .cont02 .top .logo {position:absolute; top:0; left:0;}
+.parking_cont11 .cont02 .top .google {display:inline-block; vertical-align:bottom; margin-bottom:10px;}
+.parking_cont11 .cont02 .top span {display:block; font-size:24px; color:#999999; font-weight:400;}
+.parking_cont11 .cont02 .top strong {display:block; font-size:40px; color:#222222;}
+.parking_cont11 .cont02 .top strong b {display:inline-block; margin-right:20px;}
+.parking_cont11 .cont02 .cont {margin-bottom:80px; color:#333333;}
+.parking_cont11 .cont02 .cont span {color:#999999;}
+.parking_cont11 .cont02 img {max-width:100%;}
+
+
+.parking_cont12 {overflow:hidden; padding:4.5%; border:1px solid #d2d2d2;}
+.parking_cont12 img {max-width:100%;}
+.parking_cont12 .img {float:left; width:36%; text-align:center;}
+.parking_cont12 .cont {float:right; width:60%; max-width:650px;}
+.parking_cont12 .cont img {margin-bottom:10px;}
+
+
+.parking_cont13 li > div {padding:8.8%;}
+.parking_cont13 li b {display:block; font-size:55px; color:#0088bf; font-weight:400;}
+.parking_cont13 li strong {display:block; max-width:190px; margin:10px auto 15px; padding:4px; -webkit-border-radius:18px; border-radius:18px; font-size:21px; font-weight:400; color:#fff; background:#0088bf;}
+.parking_cont13 li span {display:block; height:120px; font-size:24px; color:#333;}
+.parking_cont13 li span em {font-weight:500;}
+.parking_cont13 li .red {color:#ee1818;}
+
+
+
+
+.parking_cont14 {margin-bottom:8%; text-align:center;}
+.parking_cont14 img {max-width:100%;}
+.parking_cont14 strong {display:block; margin-top:90px; font-size:48px; color:#000000;}
+.parking_cont14 p {margin-top:20px; color:#333333;}
+.parking_cont14 em {display:block; margin-top:100px; font-size:40px; color:#0088bf;}
+.parking_cont14.type01 ul {max-width:1050px; margin:0 auto; font-weight:400;}
+.parking_cont14.type01 li {padding:1.9%;}
+.parking_cont14.type01 li p {padding:6.8%; border:1px solid #dcdcdc;}
+.parking_cont14.type01 li span {display:block; padding:20px 0 10px; font-size:22px; color:#000000;}
+.parking_cont14.type02 ul {max-width:1140px; margin:100px auto 0;  font-weight:400;}
+.parking_cont14.type02 li p {border:0;}
+.parking_cont14.type02 li span {display:block; padding:20px 0 10px; font-size:22px; color:#000000;}
+
+.ico_circle {display:inline-block; width:19px; height:19px; margin-left:5px; -webkit-border-radius:50%; border-radius:50%;}
+.ico_circle.red {background:#f80c04;}
+.ico_circle.green01 {background:#48eeaa;}
+.ico_circle.gray {background:#b9b9b9;}
+.ico_circle.green02 {background:#20d81f;}
+
+
+@media all and (max-width:767px){
+
+}
+@media all and (max-width:1550px){
+	#banner_slider {padding:60px 90px;}
+	#banner_slider .bx-wrapper .bx-prev {left:-70px;}
+	#banner_slider .bx-wrapper .bx-next {right:-70px;}
+}
+@media all and (max-width:1200px){
+	#banner_slider {padding:20px 10px;}
+	#banner_slider .bx-controls-direction {position:relative; margin-top:22px; height:32px;}
+	#banner_slider .bx-wrapper .bx-prev {top:0; left:50%; width:35px; height:32px; margin-top:0; margin-left:-48px;}
+	#banner_slider .bx-wrapper .bx-next {top:0; right:50%; width:35px; height:32px; margin-top:0; margin-right:-48px;}
+	#banner_slider .bx-wrapper .bx-next:after {position:absolute; top:50%; left:0; width:1px; height:13px; margin-left:-13px; margin-top:-7px; background:#fff; content:'';}
+	#banner_slider .li_wrap span {height:60px; font-size:13px;}
+}
+@media all and (max-width:1000px){
+	.parking_cont11 .cont01 {float:left; width:100%;}
+	.parking_cont11 .cont02 {float:left; width:100%;}
+	
+}
+@media all and (max-width:767px){
+	.board .sub_top02 {margin-bottom:35px;}
+
+	
+	
+
+	
+	
+
+
+
+	.parking_cont02 .cont03 strong {font-size:15px;}
+	
+	.parking_cont03 {padding:4% 0;}
+	.parking_cont03 .img, .parking_cont03 .cont {width:100%;}
+	.parking_cont03 .img {margin-bottom:5%;}
+	.parking_cont03 .cont table {font-size:12px;}
+	.parking_cont03 .col01 {width:45px;}
+
+	.parking_cont04 h3 {padding-left:42px; font-size:20px;}
+	.parking_cont04 h3 b {width:30px; height:30px; font-size:14px; line-height:30px;}
+	.parking_cont04 p {padding:0; padding-top:10px;}
+	.parking_cont04.type02 {padding:15px 0 25px;}
+
+	.parking_cont05 p strong {font-size:24px;}
+	.parking_cont05 p em {font-size:15px;}
+	.parking_cont05 li > div {max-width:135px;}
+	.parking_cont05 li > div b {font-size:12px;}
+	.parking_cont05 li > div strong {font-size:13px;}
+	.parking_cont05 li > div strong.type02 {font-size:12px;}
+	.parking_cont05.type02 li > div strong {font-size:12px;}
+	.parking_cont05.type03 li {width:50%; padding:5%;}
+	.parking_cont05.type03 li:nth-child(3) {clear:both;}
+	.parking_cont05.type03 span {min-height:80px;}
+	.parking_cont05.grid4 ul {width:80%; max-width:400px;}
+	.parking_cont05.grid4 ul li {width:50%;}
+	.parking_cont05.grid4 ul li+li:nth-child(3):before {display:none;}
+	.parking_cont05.grid4_t ul li {width:50%; margin-bottom:20px;}
+	.parking_cont05.grid4_t ul li:nth-child(3) {clear:both;}
+	.parking_cont05.grid4_t ul li span {padding-top:10px;}
+	.parking_cont05.grid5 ul {width:100%; max-width:600px; margin-bottom:5%;}
+	.parking_cont05.grid5 ul li {width:33.33%; margin-bottom:0;}
+	.parking_cont05.grid5 ul li:nth-child(4):before {display:none;}
+	.parking_cont05.grid5 ul li:nth-child(4) {margin-left:15%}
+	
+
+	.parking_cont06 {padding:25px; padding-bottom:60%; background-position:center bottom; background-size:100% auto;}
+	.parking_cont06 p.img {float:none; overflow:hidden; width:100%;}
+	.parking_cont06 p.img img {float:left; width:48%; max-width:220px;}
+	.parking_cont06 p.img img+img {margin:0; margin-left:4%;}
+	.parking_cont06 div {margin-left:0px; margin-top:30px;}
+	.parking_cont06.parking02_01_img0203 {background-image:url('../images/business/parking/parking02_01_img0203_m.jpg');}
+	.parking_cont06.parking02_02_img0303 {background-image:url('../images/business/parking/parking02_02_img0303_m.jpg');}
+	.parking_cont06.parking02_03_img0203 {background-image:url('../images/business/parking/parking02_03_img0203_m.jpg');}
+	.parking_cont06 div strong {margin:30px 0 15px; font-size:20px;}
+	.parking_cont06 div strong:before {width:15px; height:1px;}
+
+	.parking_cont07 li b {top:7px; left:7px; width:25px; font-size:12px; line-height:25px;}
+	.parking_cont07 li strong.s2 {font-size:13px;}
+	.parking_cont07 li strong {font-size:12px;}
+	.parking_cont07 li strong  i{font-size:9px;}
+
+	.parking_cont08 li {padding:4.5%;}
+
+	.google_search {padding:25px 10px 30px;}
+
+	
+	.parking_cont11 .cont01 em {font-size:23px;}
+	.parking_cont11 .cont01 span {font-size:14px;}
+	.parking_cont11 .cont02 .top {margin-bottom:15px; padding-left:50px;}
+	.parking_cont11 .cont02 .top span {font-size:13px;}
+	.parking_cont11 .cont02 .top strong {font-size:20px;}	
+	.parking_cont11 .cont02 .top .logo {width:42px;}
+	.parking_cont11 .cont02 .top .google {width:75px; margin-bottom:5px;}
+	.parking_cont11 .cont02 .cont {margin-bottom:25px;}
+
+	.parking_cont12 .img {width:100%;}
+	.parking_cont12 .cont {width:100%; max-width:auto; margin-top:20px;}
+
+	.parking_cont13 li b {font-size:25px;}
+	.parking_cont13 li strong {margin:5px auto 8px; font-size:13px;}
+	.parking_cont13 li span {height:60px; font-size:12px;}
+
+	.parking_cont14 strong {margin-top:45px; font-size:24px;}
+	.parking_cont14 p {margin-top:10px;}
+	.parking_cont14 em {margin-top:50px; font-size:20px;}
+	.parking_cont14.type01 li span {padding:10px 0 5px; font-size:14px;}
+	.parking_cont14.type02 ul {margin-top:40px;}
+	.parking_cont14.type02 li span {padding:10px 0 5px; font-size:14px;}
+
+}

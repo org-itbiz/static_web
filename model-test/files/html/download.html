@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="(주)아이오테크">
+    <meta name="description" content="(주)아이오테크 무인주차시스템">
+    <meta name="keywords" content="무인시스템, 무인요금정산 시스템, 사전무인, 출구무인, 사전무인정산, 출구무인정산, 요금정산, 주차관제 시스템, 무인정산, 무인운영 , 주차관제">
+    <meta name="apple-mobile-web-app-title" content="(주)아이오테크">
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:title" content="IOTC 무인주차시스템 자료 다운로드">
+    <meta property="og:site_name" content="IOTC 무인주차시스템 자료 다운로드">
+    <meta property="og:description" content="(주)아이오테크"> -->
+
+    <title>자료 다운로드</title>
+
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="../bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../contents.css">
+    <link rel="stylesheet" href="../jquery.bxslider.css">
+    <link rel="stylesheet" href="../animate.css">
+    <link rel="stylesheet" href="../parking.css">
+
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script src="../jquery.bxslider.min.js"></script>
+    <script src="../gnb.js"></script>
+    <script src="../script.js"></script>
+    <script src="../wow.min.js"></script>
+    <script src="../popper.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var config = null;
+        var url = ' http://iotc365.com/test_locale/download_set4.json';
+        var callback = function(data) {
+            config = data;
+        console.log(data);
+        }
+        $(document).ready(function(){
+    
+        $.getJSON(url + "?callback=?",function(json){});
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <!-- header_m -->
+            <div id="header_m">
+                <div class="header_top">
+                    <a href="http://model.iotc365.com" class="btn_open"><img src="../img/btn_menu.png" alt="메뉴열기"></a>
+                    <h1 class="logo"><a href="http://model.iotc365.com"><img src="../img/logo.png" alt="아이오테크"></a></h1>
+                    <a href="tel:02-2181-3506" class="btn_tel"><img src="../img/btn_tel.png" alt="전화걸기"></a>
+                </div>
+                <!-- gnb_m -->
+                <div id="gnb_m">
+                    <div class="gnb_top">
+                        <a href="#" class="btn_close"><img src="../img/btn_close.png"></a>
+                        <p class="logo"><a href="#"><img src="../img/logo.png"></a></p>
+                    </div>
+                    <div class="gnb_list">					
+                        <ul>
+                            <li class="s01">
+                                <a href="http://model.iotc365.com/">메뉴보기</a>
+                                <div class="sub">								
+                                    <ul>
+                                        <li><a href="http://model.iotc365.com/">제품소개</a></li>
+                                        <li><a href="http://webguide.iotc365.com/">웹할인 사용법</a></li>
+                                        <li><a href="http://model.iotc365.com/">콜센터</a></li>
+                                        <li><a href="#" id="btn_download">다운로드</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>	
+                <p class="dimmed_bg"></p>
+            </div>
+            <!-- //header_m -->
+        </header>
+        
+        <main id="main">
+            <div class="download_container">
+                <h2>다운로드</h2>
+                <a href="./test.html">button test</a>
+                <ul>
+                    <li class="download_ic ic1">
+                        <a href="../img/modelpdf.pdf" target="_blank" download="../img/modelpdf.pdf">제품 소개서</a>
+                    </li>
+                    <li class="download_ic ic2">
+                        <a href="../img/catalogpdf.pdf" target="_blank" download="../img/catalogpdf.pdf">종합카탈로그</a>
+                    </li>
+                    <li class="download_ic ic3">
+                        <a href="[_C4_위치][_L4_1]" target="_blank" download="../img/discount.pdf">웹할인</a>
+                    </li>
+                    <li class="download_ic ic4">
+                        <a href="../img/modelpdf.pdf" target="_blank" download="../img/modelpdf.pdf">회사소개서</a>
+                    </li>
+                    <li class="download_ic ic5">
+                        <a href="../img/modelpdf.pdf" target="_blank" download="../img/modelpdf.pdf">견적서</a>
+                    </li>
+                    <li class="download_ic ic6">
+                        <a href="../img/modelpdf.pdf" target="_blank" download="../img/modelpdf.pdf">제안서</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
