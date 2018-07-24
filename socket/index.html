@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/app.css?v=1">
     <script src="js/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/_static/websocket.js"></script>
+    <script>
+        var WebMessage = function(data)
+        {
+            if(!data)
+            {
+                alert(WebMessage);
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -18,7 +27,8 @@
     <section class="btn-group">
         
         <div class="btn">
-            <input class="app-none cancel" type="button" value="버튼1">
+                <input class="app-none" type="text" id="value1" style="color:#535353;">
+            <input class="app-none cancel" id="test" type="button" value="버튼1">
             <!-- <input class="app-none ok" type="button" value="버튼2"> -->
         </div>
     </section>
@@ -26,6 +36,10 @@
 
 <script>
     $(function() {
+        $('#test').on('click', function(){
+            var value = $('#value1').val();
+            sendMessage(value);
+        });
     });
 </script>
 
