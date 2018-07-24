@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="(주)아이오테크">
+    <meta name="description" content="(주)아이오테크 무인주차시스템">
+    <meta name="keywords" content="무인시스템, 무인요금정산 시스템, 사전무인, 출구무인, 사전무인정산, 출구무인정산, 요금정산, 주차관제 시스템, 무인정산, 무인운영 , 주차관제">
+    <meta name="apple-mobile-web-app-title" content="(주)아이오테크">
+
+    <title>자료 다운로드</title>
+
+    <link rel="stylesheet" href="../font.css">
+    <link rel="stylesheet" href="../bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../contents.css">
+    <link rel="stylesheet" href="../jquery.bxslider.css">
+    <link rel="stylesheet" href="../animate.css">
+    <link rel="stylesheet" href="../parking.css">
+    <link rel="stylesheet" href="../test.css">
+
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script src="../jquery.bxslider.min.js"></script>
+    <script src="../gnb.js"></script>
+    <script src="../script.js"></script>
+    <script src="../wow.min.js"></script>
+    <script src="../popper.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var config = null;
+        var url = ' http://iotc365.com/test_locale/download_set4.json';
+        var callback = function(data) {
+            config = data;
+
+            console.log(config);
+            console.log(config[1][4]);
+
+            var btn1 = $('#btn1');
+            var btn2 = $('#btn2');
+
+            btn1.text(config[2][4]);
+            btn1.attr("href", config[2][3]);
+            btn1.attr("download", config[2][3]);
+            
+            btn2.text(config[7][4]);
+            btn2.click(function(){
+                alert(config[7][5]);
+                alert(config[7][6]);
+                alert(config[7][7]);
+                alert(config[7][8]);
+            });
+            
+        }
+        $(document).ready(function(){
+            $.getJSON(url + "?callback=?",function(json){
+            });
+        });
+
+    </script>
+
+
+
+</head>
+<body>
+    <div id="wrap">
+        <main id="main">
+            <a id="btn1"></a>
+            <button id="btn2"></button>
+        </main>
+    </div>
+</body>
+</html>
