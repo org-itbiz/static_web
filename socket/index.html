@@ -6,13 +6,12 @@
     <title></title>
     <link rel="stylesheet" href="css/app.css?v=1">
     <script src="js/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/_static/websocket.js"></script>
     <script>
         var WebMessage = function(data)
         {
-            if(!data)
-            {
-                alert(WebMessage);
-            }
+            //todo
+            document.getElementById('return_value').value = data;
         }
     </script>
 </head>
@@ -26,13 +25,17 @@
     <section class="btn-group">
         
         <div class="btn">
-                <input class="app-none" type="text" id="value1" style="color:#535353;">
+            <input class="app-none" type="text" id="value1" style="color:#535353;">
             <input class="app-none cancel" id="test" type="button" value="버튼1">
             <!-- <input class="app-none ok" type="button" value="버튼2"> -->
         </div>
+        <div class="btn">
+            리턴값:
+            <input class="app-none" type="text" id="return_value" style="color:#535353;">
+        </div>
     </section>
 </div>
-<script src="js/_static/websocket.js"></script>
+
 <script>
     $(function() {
         $('#test').on('click', function(){
