@@ -1,0 +1,4 @@
+callback(
+    response.setCharacterEncoding('UTF-8');
+    [["","_C_LANGUAGE","","","","","","","","",""],["_L_SET","korean","","","","","","","","",""],[" ","_C_NAME","_C_ID","_C_TEXT","_C_DOWNLOAD","_C_ORDER","_C_VALUE","_C_RESPONSE","_C_SUCCESS","_C_FAIL","_C_WAIT"],["_L_1","btn","btn_test","��ư","../img/modelpdf.pdf","ALERT","","","","",""],["_L_2","edit","edit_test","�Է�","","","","","","",""],["_L_3","label","label_test","��","","","","","","",""],["_L_4","response","response_test","����","","","","","OK","FAIL","WAIT"],["","","","","","","","","","",""],["","","","","","","","","","",""]]
+)

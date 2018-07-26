@@ -7,41 +7,161 @@
     <link rel="stylesheet" href="css/app.css?v=1">
     <script src="js/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/_static/websocket.js"></script>
+    <script src="js/init_data.js"></script>
+    <script src="js/web1.js"></script>
+    
     <script>
+        function init_label() {
+            /*
+            // _버튼
+            $('#' + web_label[define['_L_취소']][define['_C_ID']]).text(web_label[define['_L_취소']][define['_C_TEXT']]);
+            
+            // _선택옵션
+            // define['_L_카드모듈_옵션#']][define['_C_ID'] => 선택자id(<select id="S1">)
+            $('#' + web_label[define['_L_카드모듈_옵션1']][define['_C_ID']]).append($('<option>',
+                {text:web_label[define['_L_카드모듈_옵션1']][define['_C_TEXT']]
+            }));
+            $('#' + web_label[define['_L_카드모듈_옵션2']][define['_C_ID']]).append($('<option>',
+                {text:web_label[define['_L_카드모듈_옵션2']][define['_C_TEXT']]
+            }));
+            */
+            //html -> div, h2, dd, ui ....
+            set_label_text(define['_L_sec1_1'], define['_C_id'], [define['_C_value']]);
+            set_label_text(define['_L_sec1_2'], define['_C_id'], [define['_C_value']]);
+            set_label_text(define['_L_sec1_3'], define['_C_id'], [define['_C_value']]);
+            set_label_text(define['_L_sec2_1'], define['_C_id'], [define['_C_value']]);
+            set_label_text(define['_L_sec2_2'], define['_C_id'], [define['_C_value']]);
+            set_label_text(define['_L_sec2_3'], define['_C_id'], [define['_C_value']]);
+            set_label_text(define['_L_sec2_4'], define['_C_id'], [define['_C_value']]);
+            // $('#' + web1[define['_L_sec1_1']][define['_C_id']]).text(web1[define['_L_sec1_1']][define['_C_value']]);
+            // $('#' + web1[define['_L_sec1_2']][define['_C_id']]).text(web1[define['_L_sec1_2']][define['_C_value']]);
+            // $('#' + web1[define['_L_sec1_3']][define['_C_id']]).text(web1[define['_L_sec1_3']][define['_C_value']]);
+            // $('#' + web1[define['_L_sec2_1']][define['_C_id']]).text(web1[define['_L_sec2_1']][define['_C_value']]);
+            // $('#' + web1[define['_L_sec2_2']][define['_C_id']]).text(web1[define['_L_sec2_2']][define['_C_value']]);
+            // $('#' + web1[define['_L_sec2_3']][define['_C_id']]).text(web1[define['_L_sec2_3']][define['_C_value']]);
+            //input type='text'
+            set_input_value(define['_L_sec1_2_v'], define['_C_id'], define['_C_value']);
+            // $('#' + web1[define['_L_sec1_2_v']][define['_C_id']]).attr('value', web1[define['_L_sec1_2_v']][define['_C_value']]);
+            //select
+            set_select_value(define['_L_sec2_2_v'], define['_C_id'], define['_C_value']);
+
+            //custom
+            $('#' + web1[define['_L_top_btn']][define['_C_id']]).append('<span class="mui-icon mui-icon-checkmarkempty"></span>'
+                                    + web1[define['_L_top_btn']][define['_C_value']]);
+            
+        }
+
+        function set_label_text(line, col_id, col_text){
+            $('#' + web1[line][col_id]).text(web1[line][col_text]);
+        }
+
+        function set_input_value(line, col_id, col_text){
+            $('#' + web1[line][col_id]).val(web1[line][col_text]);
+        }
+
+        function set_select_value(line, col_id, col_text){
+            // $('#' + web1[line][col_id] + ' option[value=' + web1[line][col_text] + ']').attr('selected','selected');
+            // 또는
+            $('#' + web1[line][col_id]).val(web1[line][col_text]);
+        }
+        
+        //기초 데이터 출력
+        var init_data = function()
+        {   
+            var sel_value = $("#sel_value");
+            sel_value.append($("<option></option>").attr("value", 0).text('- Select -'));
+            $.each(init_sel_value, function(index,json){
+                sel_value.append($("<option></option>").attr("value", json.value).text(json.text));
+            });   
+            
+            var chk_value = $("#chk_value");
+            $.each(init_chk_value, function(index,json){
+                chk_value.append('<input type="checkbox" id="cb' + json.value +'" /> ' + json.text);
+            });
+        }
+        
+        //event 
+        var init_func = function()
+        {
+            $('#' + web1[define['_L_top_btn']][define['_C_id']]).click( function(){ _L_top_btn() });
+        }
+        
+        //get jsonp callback
+        function callback(json) {
+            web1 = json;
+            // console.log(json);
+            init_label();
+            init_func();
+        }
+       
+    </script> 
+    <script>
+        var _L_top_btn = function()
+        {
+            var send_data = $('#' + web1[define['_L_sec1_2_v']][define['_C_id']]).val();
+            sendMessage(send_data);
+        }
+        
+        //응용프로그램 => web
         var WebMessage = function(data)
         {
             //todo
-            document.getElementById('return_value').value = data;
+            document.getElementById(web1[define['_L_sec1_3_v']][define['_C_id']]).value = data;
         }
     </script>
 </head>
 <body>
+<section class="number-grid">
+    <ul>
+        <li class="ok" id="top_btn">
+        </li>
+    </ul>
+</section>
 
-<div id="page-result">
-    <header class="header">
-        <a class="mui-icon mui-icon-left-nav" id="re-page-search"></a>
-        <h1>테스트</h1>
-    </header>
-    <section class="btn-group">
-        
-        <div class="btn">
-            <input class="app-none" type="text" id="value1" style="color:#535353;">
-            <input class="app-none cancel" id="test" type="button" value="버튼1">
-            <!-- <input class="app-none ok" type="button" value="버튼2"> -->
-        </div>
-        <div class="btn">
-            리턴값:
-            <input class="app-none" type="text" id="return_value" style="color:#535353;">
-        </div>
-    </section>
-</div>
+<section class="item mt-0">
+    <h2 id='h2_test'></h2>
+    <ul>
+        <li id='txt_send'></li>
+        <li><input class="app-none" type="text" id="ipt_send"></li>
+    </ul>
 
+    <ul>
+        <li id='txt_revc'></li>
+        <li><input class="app-none" type="text" id="ipt_recv"></li>
+    </ul>
+
+    <h2 id='h2_other'></h2>
+    <ul>
+        <li id='txt_select'></li>
+        <li class="select">
+            <select class="app-none" id="sel_value"></select>
+        </li>
+    </ul>
+    <ul>
+        <li id='txt_chkbox'></li>
+        <li class="center mui-checkbox"><label id='chk_value'></label></li>
+    </ul>
+    <ul>
+        <li id='txt_switch'></li>
+        <li>
+            <div class="mui-switch">
+                <div class="mui-switch-handle"></div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<script src="js/mui/mui.min.js"></script>
 <script>
+    mui.init({
+        swipeBack:true
+    });
+</script>
+<script>
+
     $(function() {
-        $('#test').on('click', function(){
-            var value = $('#value1').val();
-            sendMessage(value);
-        });
+        init_data();
+        $.getJSON(urls.web1 + "?callback=?", function(json){});
     });
 </script>
 
