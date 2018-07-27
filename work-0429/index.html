@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title></title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header class="title">미인식 차량</header>
+<section class="cctv"></section>
+<section class="number-btn">
+    <ul>
+        <li>차량아님<span>10</span></li>
+        <li>인식불가<span>10</span></li>
+        <li>부분인식<span>10</span></li>
+    </ul>
+</section>
+<section class="number-input">
+    <input class="app-none" type="text" readonly value="2">
+    <input class="app-none" type="text" readonly value="4">
+    <input class="app-none" type="text" readonly value="6">
+    <input class="app-none" type="text" readonly value="8">
+</section>
+<section class="number-grid">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li class="cancel"><span class="mui-icon mui-icon-closeempty"></span>취소</li>
+        <li>0</li>
+        <li class="ok" id="go-page-search"><span class="mui-icon mui-icon-checkmarkempty"></span>확인</li>
+    </ul>
+</section>
+
+<header class="title mt">LPR설정</header>
+<section class="lpr">
+    <ul>
+        <li></li>
+        <li><span class="mui-icon mui-icon-arrowthinup"></span></li>
+        <li></li>
+        <li><span class="mui-icon mui-icon-arrowthinleft"></span></li>
+        <li></li>
+        <li><span class="mui-icon mui-icon-arrowthinright"></span></li>
+        <li></li>
+        <li><span class="mui-icon mui-icon-arrowthindown"></span></li>
+        <li></li>
+    </ul>
+</section>
+
+<header class="title mt">설정</header>
+<section class="item mt-0">
+    <h2>기본설정</h2>
+    <ul>
+        <li>현장명</li>
+        <li><input class="app-none" type="text" value="테스트 현장"></li>
+    </ul>
+    <ul>
+        <li>언어</li>
+        <li><input class="app-none" type="text" value="한국어"></li>
+    </ul>
+</section>
+<section class="item">
+    <h2>차단기 설정</h2>
+    <h3>바이패스</h3>
+    <ul>
+        <li>입차 미인식</li>
+        <li class="select">
+            <select class="app-none" name="">
+                <option value="">선택1</option>
+                <option value="">선택2</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li>출차 미인식</li>
+        <li class="select">
+            <select class="app-none" name="">
+                <option value="">선택1</option>
+                <option value="">선택2</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li>금액</li>
+        <li><input class="app-none" type="text" value="0"></li>
+    </ul>
+    <ul>
+        <li>프리패스</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>정기차 오픈</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>정산 중 오픈 차단</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>만차</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+</section>
+<section class="item">
+    <h2>요금 정산 및 할인 설정</h2>
+    <ul>
+        <li>카드 결제 모듈</li>
+        <li class="select">
+            <select class="app-none" name="">
+                <option value="">선택1</option>
+                <option value="">선택2</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li>할인권 모듈</li>
+        <li class="select">
+            <select class="app-none" name="">
+                <option value="">선택1</option>
+                <option value="">선택2</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li>사전 할인</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>주차 (정산 금액)</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>시작 시간 포함 할인</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>최대 금액 설정</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>설정</li>
+        <li class="select">
+            <select class="app-none" name="">
+                <option value="">선택1</option>
+                <option value="">선택2</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li>금액</li>
+        <li><input class="app-none" type="text" value="0"></li>
+    </ul>
+    <ul>
+        <li>할인 금액 설정</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>설정</li>
+        <li class="select">
+            <select class="app-none" name="">
+                <option value="">선택1</option>
+                <option value="">선택2</option>
+            </select>
+        </li>
+    </ul>
+    <ul>
+        <li>금액</li>
+        <li><input class="app-none" type="text" value="0"></li>
+    </ul>
+</section>
+<section class="item">
+    <h2>기타 설정</h2>
+    <ul>
+        <li>할인권 DB</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>정산 후 재등록</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>출차 미인식시 사전정산</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>전광판</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>할인시 요금 변경</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+    <ul>
+        <li>할인 시간 변경</li>
+        <li class="center mui-checkbox"><label><input class="app-none" type="checkbox">사용</label></li>
+    </ul>
+</section>
+
+<header class="title mt">차단기 상태 및 제어</header>
+<section class="item mt-0">
+    <ul>
+        <li>입구</li>
+        <li>
+            <div class="mui-switch">
+                <div class="mui-switch-handle"></div>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>출구</li>
+        <li>
+            <div class="mui-switch">
+                <div class="mui-switch-handle"></div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<header class="title mt">전력 제어</header>
+<section class="item mt-0">
+    <ul>
+        <li>전력</li>
+        <li><input class="app-none" type="text" value="0"></li>
+    </ul>
+</section>
+
+<header class="title mt">감지기 설정</header>
+<section class="item mt-0">
+    <ul>
+        <li>감도</li>
+        <li><input class="app-none" type="text" value="0"></li>
+    </ul>
+</section>
+
+
+<script src="js/mui.min.js"></script>
+<script>
+    mui.init({
+        swipeBack:true
+    });
+</script>
+
+</body>
+</html>
