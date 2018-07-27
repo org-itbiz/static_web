@@ -64,7 +64,7 @@ var websocket, recvMemo, curr_ws;
 $(function () {
     recvMemo = $('#ws_debug');
 
-    currentWebsocket(30001);
+    currentWebsocket(30002);
     // curr_ws = setInterval(function () {
     //     currentWebsocket(33333);
     // }, 500);
